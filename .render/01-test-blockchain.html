@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><style>
+  html,body{margin:0;background:#eef1f5;}
+  body{padding:32px 32px 40px;font-family:Consolas,"Cascadia Mono","Courier New",monospace;}
+  .win{width:1080px;margin:0 auto;border-radius:10px;overflow:hidden;
+       box-shadow:0 18px 48px rgba(15,23,42,.22);background:#1e1e1e;}
+  .bar{height:38px;background:#2d2d2d;display:flex;align-items:center;padding:0 14px;gap:8px;}
+  .dot{width:12px;height:12px;border-radius:50%;}
+  .title{margin-left:10px;font-size:13px;color:#bdbdbd;font-family:"Segoe UI","Microsoft YaHei",sans-serif;}
+  pre{margin:0;padding:18px 22px 26px;color:#d6d6d6;font-size:14.5px;line-height:1.55;
+      white-space:pre-wrap;word-break:break-word;}
+  .cmd{color:#e8e8e8;}
+  .path{color:#4ec9b0;}
+</style></head><body>
+<div class="win">
+  <div class="bar">
+    <span class="dot" style="background:#ff5f57"></span>
+    <span class="dot" style="background:#febc2e"></span>
+    <span class="dot" style="background:#28c840"></span>
+    <span class="title">命令提示符 — node test-blockchain.js</span>
+  </div>
+  <pre><span class="path">D:\benkenshengxm\qukuailianshiyan2.0\blockchaindemo&gt;</span><span class="cmd"> node test-blockchain.js</span>
+=================Blockchain 文件测试开始=================
+1. 测试创世区块
+--创世区块的索引: 0
+--创世区块的前一个哈希: 0
+--创世区块的数据: Genesis Block
+--创世区块的哈希: 000dc75a315c77a1f9c98fb6247d03dd18ac52632d7dc6a9920261d8109b37cf
+--创世区块的 nonce: 604
+--创世区块的时间: 2017/10/18 03:53:20
+
+2. 测试区块链初始化状态
+--当前链长度: 1
+--当前难度: 3
+--最新区块索引: 0
+
+3. 测试哈希计算
+-- 计算的哈希值: ee942311984baf83476c2e857015ed3a19d21ff3ba203ccbec80dd6a9f51dd64
+-- 哈希长度: 64 字符
+-- 哈希计算正常
+
+4. 测试区块合法性校验
+-- 链是否合法: true
+-- 创世区块是否满足难度: true
+
+5. 测试挖一个区块，也是挖矿
+挖矿耗时: 6.673ms
+-- 新区块的索引: 1
+-- 新区块的哈希值: 00047459710b4f9d9c398efadc24d1f6c1d334f376b01f7647e7560acfc4ae92
+-- 新区块的数据: 一个区块
+-- 新区块的 nonce: 2899
+-- 当前区块的长度: 2
+
+6. 测试显示完整的区块链
+  区块 #0
+  索引: 0
+  前一个哈希: 0
+  时间戳: 1508270000000
+  数据: Genesis Block
+  哈希值: 000dc75a315c77a1f9c98fb6247d03dd18ac52632d7dc6a9920261d8109b37cf
+  nonce: 604
+  时间: 2017/10/18 03:53:20
+  --------------------
+  区块 #1
+  索引: 1
+  前一个哈希: 000dc75a315c77a1f9c98fb6247d03dd18ac52632d7dc6a9920261d8109b37cf
+  时间戳: 1795075098354
+  数据: 一个区块
+  哈希值: 00047459710b4f9d9c398efadc24d1f6c1d334f376b01f7647e7560acfc4ae92
+  nonce: 2899
+  时间: 2026/11/19 15:58:18
+  --------------------
+7. 区块验证
+  新区块 1 是否有效: true</pre>
+</div></body></html>

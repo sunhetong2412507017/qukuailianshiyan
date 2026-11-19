@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><style>
+  html,body{margin:0;background:#eef1f5;}
+  body{padding:32px 32px 40px;font-family:Consolas,"Cascadia Mono","Courier New",monospace;}
+  .win{width:1080px;margin:0 auto;border-radius:10px;overflow:hidden;
+       box-shadow:0 18px 48px rgba(15,23,42,.22);background:#1e1e1e;}
+  .bar{height:38px;background:#2d2d2d;display:flex;align-items:center;padding:0 14px;gap:8px;}
+  .dot{width:12px;height:12px;border-radius:50%;}
+  .title{margin-left:10px;font-size:13px;color:#bdbdbd;font-family:"Segoe UI","Microsoft YaHei",sans-serif;}
+  pre{margin:0;padding:18px 22px 26px;color:#d6d6d6;font-size:14.5px;line-height:1.55;
+      white-space:pre-wrap;word-break:break-word;}
+  .cmd{color:#e8e8e8;}
+  .path{color:#4ec9b0;}
+</style></head><body>
+<div class="win">
+  <div class="bar">
+    <span class="dot" style="background:#ff5f57"></span>
+    <span class="dot" style="background:#febc2e"></span>
+    <span class="dot" style="background:#28c840"></span>
+    <span class="title">命令提示符 — node test-messages.js</span>
+  </div>
+  <pre><span class="path">D:\benkenshengxm\qukuailianshiyan2.0\blockchaindemo&gt;</span><span class="cmd"> node test-messages.js</span>
+*******************消息类型和消息工厂测试开始*******************
+1. 测试消息类型枚举
+   REQUEST_LATEST_BLOCK: 0
+   RECEIVE_LATEST_BLOCK: 1
+   REQUEST_LATEST_BLOCKCHAIN: 2
+   RECEIVE_LATEST_BLOCKCHAIN: 3
+   HANDSHAKE: 4
+2. 测试请求最新区块消息
+   消息对象: { type: 0 }
+   消息类型是否为 REQUEST_LATEST_BLOCK: true
+3. 测试发送最新区块消息
+   消息类型: 1
+   是否携带区块数据: true
+   数据是否为创世区块: true
+4. 测试请求整条区块链消息
+   消息对象: { type: 2 }
+   消息类型是否为 REQUEST_LATEST_BLOCKCHAIN: true
+5. 测试发送整条区块链消息
+   消息类型: 3
+   是否携带区块链数据: true
+   区块链长度: 1
+6. 测试握手消息
+   消息对象: { type: 4, data: { port: 2727 } }
+   消息类型是否为 HANDSHAKE: true
+   携带的端口: 2727
+   端口是否正确: true
+*******************消息类型和消息工厂测试结束*******************</pre>
+</div></body></html>

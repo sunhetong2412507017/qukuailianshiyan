@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><style>
+  html,body{margin:0;background:#eef1f5;}
+  body{padding:32px 32px 40px;font-family:Consolas,"Cascadia Mono","Courier New",monospace;}
+  .win{width:1080px;margin:0 auto;border-radius:10px;overflow:hidden;
+       box-shadow:0 18px 48px rgba(15,23,42,.22);background:#1e1e1e;}
+  .bar{height:38px;background:#2d2d2d;display:flex;align-items:center;padding:0 14px;gap:8px;}
+  .dot{width:12px;height:12px;border-radius:50%;}
+  .title{margin-left:10px;font-size:13px;color:#bdbdbd;font-family:"Segoe UI","Microsoft YaHei",sans-serif;}
+  pre{margin:0;padding:18px 22px 26px;color:#d6d6d6;font-size:14.5px;line-height:1.55;
+      white-space:pre-wrap;word-break:break-word;}
+  .cmd{color:#e8e8e8;}
+  .path{color:#4ec9b0;}
+</style></head><body>
+<div class="win">
+  <div class="bar">
+    <span class="dot" style="background:#ff5f57"></span>
+    <span class="dot" style="background:#febc2e"></span>
+    <span class="dot" style="background:#28c840"></span>
+    <span class="title">命令提示符 — node reproduce-demo.js</span>
+  </div>
+  <pre><span class="path">D:\benkenshengxm\qukuailianshiyan2.0\blockchaindemo&gt;</span><span class="cmd"> node reproduce-demo.js</span>
+=========== 按固定时间戳复现示范区块 ===========
+区块 #0
+  timestamp : 1508270000000  (页面显示 05/03/49765, 00:53:20)
+  data      : Genesis Block
+  nonce     : 604  ✓ 与示范一致
+  hash      : 000dc75a315c77a1f9c98fb6247d03dd18ac52632d7dc6a9920261d8109b37cf
+  prevHash  : 0
+  ------------------------------------------
+区块 #1
+  timestamp : 1793257768028  (页面显示 29/01/58796, 13:47:08)
+  data      : wqeqeq
+  nonce     : 2775  ✓ 与示范一致
+  hash      : 000b776d4f2cc94004322ee6b3d73e6a1a4050f4a84a737fd966fed535ef65c4
+  prevHash  : 000dc75a315c77a1f9c98fb6247d03dd18ac52632d7dc6a9920261d8109b37cf
+  ------------------------------------------
+区块 #2
+  timestamp : 1793258036547  (页面显示 01/02/58796, 16:22:27)
+  data      : asdadsadas
+  nonce     : 1614  ✓ 与示范一致
+  hash      : 00091ec64451dac6f98d16b20948373de772890443226c6bfa0a9abc64f2a559
+  prevHash  : 000b776d4f2cc94004322ee6b3d73e6a1a4050f4a84a737fd966fed535ef65c4
+  ------------------------------------------
+整链是否合法: true
+与示范图完全一致: true</pre>
+</div></body></html>
